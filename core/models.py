@@ -25,7 +25,7 @@ class Servico(Base):
     
     class Meta:
         verbose_name = "Serviço"
-        verbose_plural = "Serviços"
+        verbose_name_plural = "Serviços"
         
     def __str__(self):
         return self.servico
