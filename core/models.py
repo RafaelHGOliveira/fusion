@@ -52,7 +52,7 @@ class Funcionario(Base):
     
     class Meta:
         verbose_name = 'Funcionário'
-        verbose_name_Plural = 'Funcionários'
+        verbose_name_plural = 'Funcionários'
         
     def __str__(self) -> str:
         return self.nome
