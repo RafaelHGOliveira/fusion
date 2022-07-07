@@ -1,5 +1,4 @@
 import uuid
-from webbrowser import get
 from django.db import models
 from stdimage.models import StdImageField
 
@@ -62,4 +61,16 @@ class Funcionario(Base):
     def __str__(self) -> str:
         return self.nome
     
-#class Features(Base):
+class Recurso(Base):
+    
+    ICONE_CHOISES = (
+        ('lni-rocket', 'Foguete'),
+        ('lni-laptop-phone', 'Laptop'),
+        ('lni-cog', 'Engrenagem'),
+        ('lni-leaf', 'Folha'),
+        ('lni-layers', 'Camadas'),
+    )
+    
+    icone = models.CharField('Icone', max_length=20, choices=ICONE_CHOISES)
+    nome = models.CharField('Nome', max_length=100)
+    descricao = models.TextField('Descrição', max_length=250)
