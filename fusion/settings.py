@@ -146,7 +146,6 @@ STATICFILES_DIRS = (
 )
 
 
-
 # Email de teste console
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -167,7 +166,3 @@ DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL = 'index'
-
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
