@@ -152,8 +152,11 @@ STATICFILES_DIRS = (
 """
 
 #MEDIA_ROOT = Path(BASE_DIR, 'media')
-MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
+
+MEDIA_ROOT = (
+  Path(BASE_DIR, 'media') #pasta media para abrigar os arquivos dos usuários
+)
 
 
 # Email de teste console
