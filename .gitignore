@@ -1,5 +1,8 @@
 .vscode
+
 media
+
+htmlcov/*
 
 
 # Byte-compiled / optimized / DLL files

@@ -87,7 +87,6 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -98,12 +97,13 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+
 """
-
-
 DATABASES = {
     'default': dj_database_url.config()
 }
+"""
 
 
 # Password validation
@@ -144,12 +144,7 @@ USE_TZ = True
 STATIC_ROOT = Path(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-"""
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    Path(BASE_DIR, 'static'),
-)
-"""
+
 
 MEDIA_ROOT = Path(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
