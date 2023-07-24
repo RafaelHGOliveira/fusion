@@ -36,19 +36,12 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'core',
-    
-    #'django_adminlte',
-    #'django_adminlte_theme',
-    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    
-    
 ]
 
 MIDDLEWARE = [
@@ -87,6 +80,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 
+# Change for a real password
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -150,11 +144,11 @@ MEDIA_ROOT = Path(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-# Email de teste console
+# Email for testing
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 """
-# Email produção
+# Email production
 
 EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'no-reply@fusion.com.br'
